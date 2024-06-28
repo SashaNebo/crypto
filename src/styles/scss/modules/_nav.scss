@@ -1,0 +1,66 @@
+// @import "../main.scss";
+
+.nav {
+  display: flex;
+
+  a {
+    color: var(--color-text);
+    transition: all .2s linear;
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+
+  a {
+    font-weight: 700;
+  }
+
+  @include media($lg) {
+    column-gap: 24px;
+
+    a {
+      font-size: 16px;
+    }
+  }
+
+  @include media($md) {
+    display: none;
+  }
+}
+
+.nav-footer {
+  flex-direction: column;
+  row-gap: 10px;
+
+  a {
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--color-muted);
+  }
+}
+
+.nav-socials {
+  display: flex;
+  column-gap: 24px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-primary);
+    transition: all .2s linear;
+  }
+
+  a:hover {
+
+    svg {
+      fill: #441792;
+    }
+  }
+}
