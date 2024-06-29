@@ -17,4 +17,9 @@
   body {
     font-size: 18px;
   }
+
+  svg {
+    width: 32px;
+    height: 32px;
+  }
 }

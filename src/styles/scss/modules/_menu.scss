@@ -1,0 +1,157 @@
+.menu {
+  // width: clamp(200px, calc(100vw - 50px), 350px);
+  // width: 480px;
+  // height: 650px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+
+  background-color: var(--color-primary);
+  border-radius: 25px;
+
+  &-root {
+    width: 100px;
+    height: 40px;
+
+    display: none;
+    position: relative;
+
+    @include media($md) {
+      display: block;
+    }
+  }
+
+  &-btn {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 11;
+
+    border-radius: 25px;
+    overflow: hidden;
+
+    &__slider {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__el {
+      width: 100%;
+      height: 100%;
+
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+
+      &:nth-of-type(1) {
+        color: #fff;
+        background-color: var(--color-primary);
+      }
+
+      &:nth-of-type(2) {
+        position: absolute;
+        top: 100%;
+        color: #fff;
+        background-color: #000;
+      }
+    }
+
+    .perspective-text {
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      transform-style: preserve-3d;
+      transition: transform 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+
+      p {
+        transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+
+        &:nth-of-type(2) {
+          position: absolute;
+          opacity: 0;
+          transform: rotateX(-90deg) translateY(50%);
+          transform-origin: bottom center;
+        }
+      }
+
+      &:hover {
+        transform: rotateX(90deg);
+
+        p {
+          &:nth-of-type(1) {
+            transform: translateY(-100%);
+            opacity: 0;
+          }
+
+          &:nth-of-type(2) {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &-nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 25px;
+
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 18px;
+      margin-top: 70px;
+    }
+
+    &__item {
+      perspective: 120px;
+      perspective-origin: bottom;
+    }
+
+    &__link {
+      font-size: 32px;
+      font-weight: 500;
+      color: #fff;
+      transition: all .2s linear;
+
+      &:hover {
+        color: #b4b4b4;
+      }
+    }
+  }
+
+  &-socials {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+    li {
+      svg {
+        width: 24px;
+        height: 24px;
+        fill: #fff;
+        transition: all .2s linear;
+      }
+    }
+
+    a:hover {
+      svg {
+        fill: #b4b4b4;
+      }
+    }
+  }
+}
