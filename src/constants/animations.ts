@@ -1,3 +1,36 @@
+export const anMenuRoot = {
+  initial: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    rotate: 0,
+    transition: {
+      duration: 0.7,
+      ease: "easeOut",
+    },
+  },
+  hidden: {
+    opacity: 0,
+    scale: 0.8,
+    y: -100,
+    rotate: 10,
+    transition: {
+      duration: 0.7,
+      ease: "easeInOut",
+    },
+  },
+  fixed: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    rotate: 0,
+    transition: {
+      duration: 0.7,
+      ease: "easeOut",
+    },
+  },
+}
+
 export const anMenu = {
   open: {
     width: "clamp(200px, calc(100vw - 50px), 350px)",
@@ -48,6 +81,26 @@ export const anMenuSocialsItem = {
   initial: {
     opacity: 0,
     y: 20,
+  },
+  enter: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      delay: 0.75 + i * 0.1,
+      ease: [0.215, 0.61, 0.355, 1],
+    },
+  }),
+  exit: {
+    opacity: 0,
+    transition: { duration: 0.5, type: "tween", ease: "easeInOut" },
+  },
+}
+
+export const anMenuLogo = {
+  initial: {
+    opacity: 0,
+    y: 10,
   },
   enter: (i: number) => ({
     opacity: 1,

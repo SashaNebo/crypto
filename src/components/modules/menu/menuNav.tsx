@@ -1,15 +1,16 @@
-import { navItemsAdditional, socialItems } from "@/constants"
+import { navItemsNavigation } from "@/constants"
 import { anMenuNavItem } from "@/constants/animations"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { MenuSocials } from "./menuSocials"
-import { Socials } from "@/components/ui/socials"
+import { MenuLogo } from "./menuLogo"
 
 export const MenuNav = () => {
   return (
     <nav className="menu-nav">
+      <MenuLogo />
       <ul className="menu-nav__list">
-        {navItemsAdditional.map(({ id, text, href }, i) => (
+        {navItemsNavigation.map(({ id, text, href }, i) => (
           <li className="menu-nav__item" key={id}>
             <motion.div
               className="menu-nav__item-content"
@@ -29,7 +30,6 @@ export const MenuNav = () => {
           </li>
         ))}
       </ul>
-
       <MenuSocials />
     </nav>
   )
