@@ -4,10 +4,11 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 import { MenuSocials } from "./menuSocials"
 import { MenuLogo } from "./menuLogo"
+import { ThemeModifier } from "@/components/elements/themeModifier"
 
 export const MenuNav = () => {
   return (
-    <nav className="menu-nav">
+    <div className="menu-nav">
       <MenuLogo />
       <ul className="menu-nav__list">
         {navItemsNavigation.map(({ id, text, href }, i) => (
@@ -30,7 +31,11 @@ export const MenuNav = () => {
           </li>
         ))}
       </ul>
-      <MenuSocials />
-    </nav>
+
+      <div className="flex justify-between">
+        <MenuSocials />
+        <ThemeModifier />
+      </div>
+    </div>
   )
 }

@@ -7,7 +7,7 @@
   --xs: 480px;
 }
 
-:root {
+/* :root {
   --fz-h1: 64px;
   --fz-h2: 56px;
   --fz-h3: 32px;
@@ -23,7 +23,7 @@
     --fz-h4: 16px;
     --fz-h5: 14px;
   }
-}
+} */
 
 html {
   --color-page: #fff;

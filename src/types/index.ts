@@ -1,4 +1,5 @@
 import { IconsIds } from "@/helpers/icons"
+import { StaticImageData } from "next/image"
 
 export type THEME_STATE = {
   theme: "dark" | null
@@ -17,3 +18,16 @@ export type SOCIAL_ITEM = {
   href: string
   iconId: IconsIds
 }
+
+export type AVATAR = {
+  avatarImg: StaticImageData
+  verified?: boolean
+}
+
+export type CARD_NFT = {
+  cardImg: StaticImageData
+  ownerName: string
+  priceInUSD: number
+  priceInETH: number
+  priceStatus: "success" | "fail"
+} & AVATAR
