@@ -9,6 +9,7 @@ import badgeGooglePlayDark from "../../public/images/icons/badge-google-play-dar
 import ethereum from "../../public/images/icons/ethereum.svg"
 import blurCircle from "../../public/images/icons/blur-circle.svg"
 import verified from "../../public/images/icons/verified.svg"
+import cryptoText from "../../public/images/icons/ctypto-text.svg"
 
 export const iconsList = {
   logo,
@@ -22,6 +23,7 @@ export const iconsList = {
   ethereum,
   blurCircle,
   verified,
+  cryptoText,
 } as const
 
 export type IconsIds = keyof typeof iconsList

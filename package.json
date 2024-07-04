@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "component": "npx generate-react-cli component"
+    "lint": "next lint"
   },
   "dependencies": {
     "framer-motion": "^11.2.12",

@@ -2,6 +2,7 @@ import { Download } from "./download"
 import { avatar1, nftImg1 } from "@/helpers/images"
 import { Decorations } from "./decorations"
 import { CardNFT } from "@/components/elements/cardNFT"
+import { Stripe } from "../../elements/stripe"
 
 export const Hero = () => {
   return (
@@ -22,7 +23,7 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-
+      <Stripe />
       <Decorations />
     </section>
   )

@@ -1,6 +1,5 @@
 "use client"
 import { motion } from "framer-motion"
-import { ThemeModifier } from "@/components/elements/themeModifier"
 import { Backlight } from "@/components/elements/backlight"
 
 export default function Template({ children }: { children: React.ReactNode }) {
