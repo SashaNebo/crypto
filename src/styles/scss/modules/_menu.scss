@@ -4,7 +4,7 @@
   right: 0;
   z-index: 10;
 
-  background-color: var(--color-primary);
+  background-color: #DBDBDB;
   border-radius: 25px;
   overflow: hidden;
 
@@ -54,14 +54,14 @@
 
       &:nth-of-type(1) {
         color: #fff;
-        background-color: var(--color-primary);
+        background-color: #0B090D;
       }
 
       &:nth-of-type(2) {
         position: absolute;
         top: 100%;
         color: #fff;
-        background-color: #000;
+        background-color: var(--color-primary);
       }
     }
 
@@ -127,11 +127,11 @@
     &__link {
       font-size: 32px;
       font-weight: 500;
-      color: #fff;
+      color: var(--color-text);
       transition: all .2s linear;
 
       &:hover {
-        color: #b4b4b4;
+        color: #441792;
       }
     }
   }
@@ -145,23 +145,45 @@
       svg {
         width: 24px;
         height: 24px;
-        fill: #fff;
+        fill: var(--color-primary);
         transition: all .2s linear;
       }
     }
 
     a:hover {
       svg {
-        fill: #b4b4b4;
+        opacity: .5;
       }
     }
   }
 
   &-logo {
-    color: #EFEFFF;
+    color: var(--color-text);
+  }
+}
 
-    svg {
-      display: none;
+html.dark {
+  .menu {
+    background-color: #000;
+
+    &-btn {
+      &__el {
+        &:nth-of-type(1) {
+          background-color: var(--color-primary);
+        }
+
+        &:nth-of-type(2) {
+          background-color: #110619;
+        }
+      }
+    }
+
+    &-nav {
+      &__link {
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
     }
   }
 }
