@@ -27,7 +27,9 @@ export const Menu = () => {
         variants={anMenu}
         animate={isActive ? "open" : "closed"}
         initial="closed">
-        <AnimatePresence>{isActive && <MenuNav />}</AnimatePresence>
+        <AnimatePresence>
+          {isActive && <MenuNav toggleActive={toggleActive} />}
+        </AnimatePresence>
       </motion.menu>
     </motion.div>
   )

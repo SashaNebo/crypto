@@ -27,7 +27,13 @@ export type AVATAR = {
 export type CARD_NFT = {
   cardImg: StaticImageData
   ownerName: string
-  priceInUSD: number
-  priceInETH: number
+  priceInUSD: string
+  priceInETH: string
   priceStatus: "success" | "fail"
 } & AVATAR
+
+export type SECTION_INFO = { offsetTop: number; id: string }
+export type SECTIONS_STATE = {
+  sections: SECTION_INFO[]
+  addSection: (sectionInfo: SECTION_INFO) => void
+}

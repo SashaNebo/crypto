@@ -14,9 +14,13 @@ export const CardNFT = ({
   priceStatus,
 }: CARD_NFT) => {
   return (
-    <div className="w-[326px] h-[534px] relative border-[1px] border-solid border-color-border rounded-xl overflow-hidden">
-      <Link href={"/"} className="absolute z-[1]" aria-label="open nft">
-        <Image src={cardImg} alt="card img" />
+    <div className="w-[326px] h-[534px] relative border-[1px] border-solid border-color-border rounded-xl overflow-hidden max-lg:w-[230px] max-lg:h-[360px]">
+      <Link
+        href={"/"}
+        className="absolute z-[1]"
+        scroll={false}
+        aria-label="open nft">
+        <Image src={cardImg} alt="card img" priority />
       </Link>
 
       <div className="w-full absolute bottom-0 z-[2] flex justify-between p-4 bg-color-bg">

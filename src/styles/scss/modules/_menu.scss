@@ -19,6 +19,7 @@
       position: fixed;
       top: 30px;
       right: 3vw;
+      z-index: 100;
 
       @include media($md) {
         right: 20px;

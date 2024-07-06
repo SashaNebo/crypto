@@ -5,8 +5,10 @@ import Link from "next/link"
 import { MenuSocials } from "./menuSocials"
 import { MenuLogo } from "./menuLogo"
 import { ThemeModifier } from "@/components/elements/themeModifier"
+import { useScrollToSection } from "@/hooks/useScrollToSection"
 
-export const MenuNav = () => {
+export const MenuNav = ({ toggleActive }: { toggleActive: () => void }) => {
+  const scrollToSection = useScrollToSection()
   return (
     <div className="menu-nav">
       <MenuLogo />
@@ -22,6 +24,7 @@ export const MenuNav = () => {
               exit="exit">
               <Link
                 className="menu-nav__link"
+                onClick={() => scrollToSection(id)}
                 href={href}
                 aria-label={`navigation to ${text}`}
                 scroll={false}>

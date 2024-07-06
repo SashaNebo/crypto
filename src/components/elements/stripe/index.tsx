@@ -7,13 +7,13 @@ export const Stripe = () => {
       <div>
         <div className="w-full h-[80px] relative">
           <div className="w-full absolute z-[2] rotate-[4deg] max-sm:rotate-[8deg ]">
-            <StripeLine backgroundColor="#388BFF" velocity={3}>
+            <StripeLine backgroundColor="#388BFF" velocity={1}>
               <StripeText color="var(--color-bg)" length={10} />
             </StripeLine>
           </div>
 
           <div className="w-full absolute z-[1] -rotate-[4deg] max-sm:-rotate-[8deg]">
-            <StripeLine backgroundColor="var(--color-primary)" velocity={-3}>
+            <StripeLine backgroundColor="var(--color-primary)" velocity={-1}>
               <StripeText color="var(--color-text)" length={10} />
             </StripeLine>
           </div>
