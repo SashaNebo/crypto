@@ -1,5 +1,8 @@
 import {
+  av1,
+  av2,
   av3,
+  av4,
   av6,
   av8,
   av9,
@@ -8,7 +11,7 @@ import {
   nftImg3,
   nftImg4,
 } from "@/helpers/images"
-import { CARD_NFT, NAV_ITEM, SOCIAL_ITEM } from "@/types"
+import { CARD_NFT, COLLECTOR, NAV_ITEM, SOCIAL_ITEM } from "@/types"
 
 export const navItemsNavigation: NAV_ITEM[] = [
   { id: "download", text: "Download", href: "/" },
@@ -87,7 +90,7 @@ export const cardsNFTsAll: CARD_NFT[] = [
     priceInETH: "4.2",
     priceInUSD: "9,240",
     verified: true,
-    priceStatus: "success",
+    priceStatus: "fail",
   },
   {
     avatarImg: av9,
@@ -133,5 +136,75 @@ export const cardsNFTsAll: CARD_NFT[] = [
     priceInUSD: "9,240",
     verified: true,
     priceStatus: "success",
+  },
+]
+
+export const categoryList = [
+  "This day",
+  "This week",
+  "This mounth",
+  "This year",
+]
+
+export const collectors: COLLECTOR[] = [
+  {
+    name: "John Doe",
+    nickname: "@johnNFT",
+    priceInETH: "1.5",
+    pricePercent: "20",
+    priceStatus: "success",
+    avatarImg: av1,
+    verified: true,
+  },
+  {
+    name: "Jane Smith",
+    nickname: "@janeNFT",
+    priceInETH: "2.1",
+    pricePercent: "15",
+    priceStatus: "success",
+    avatarImg: av2,
+  },
+  {
+    name: "Alice Johnson",
+    nickname: "@aliceNFT",
+    priceInETH: "0.9",
+    pricePercent: "30",
+    priceStatus: "fail",
+    avatarImg: av3,
+    verified: true,
+  },
+  {
+    name: "Bob Brown",
+    nickname: "@bobNFT",
+    priceInETH: "1.2",
+    pricePercent: "10",
+    priceStatus: "success",
+    avatarImg: av4,
+  },
+  {
+    name: "Charlie Davis",
+    nickname: "@charlieNFT",
+    priceInETH: "0.7",
+    pricePercent: "25",
+    priceStatus: "fail",
+    avatarImg: av6,
+    verified: true,
+  },
+  {
+    name: "Eve Martinez",
+    nickname: "@eveNFT",
+    priceInETH: "3.0",
+    pricePercent: "5",
+    priceStatus: "success",
+    avatarImg: av8,
+  },
+  {
+    name: "Frank Wilson",
+    nickname: "@frankNFT",
+    priceInETH: "2.5",
+    pricePercent: "18",
+    priceStatus: "success",
+    avatarImg: av9,
+    verified: false,
   },
 ]

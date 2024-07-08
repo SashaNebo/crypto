@@ -10,6 +10,8 @@ import ethereum from "../../public/images/icons/ethereum.svg"
 import blurCircle from "../../public/images/icons/blur-circle.svg"
 import verified from "../../public/images/icons/verified.svg"
 import cryptoText from "../../public/images/icons/ctypto-text.svg"
+import down from "../../public/images/icons/down.svg"
+import crypto from "../../public/images/icons/crypto.svg"
 
 export const iconsList = {
   logo,
@@ -24,6 +26,8 @@ export const iconsList = {
   blurCircle,
   verified,
   cryptoText,
+  down,
+  crypto,
 } as const
 
 export type IconsIds = keyof typeof iconsList

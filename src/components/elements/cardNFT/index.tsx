@@ -24,7 +24,7 @@ export const CardNFT = ({
       </Link>
 
       <div className="w-full absolute bottom-0 z-[2] flex justify-between p-4 bg-color-bg">
-        <div className="flex gap-x-3">
+        <div className="flex items-center gap-x-3">
           <Avatar avatarImg={avatarImg} verified={verified} />
           <div className="">
             <div className="text-xs font-light italic text-color-muted">

@@ -32,6 +32,14 @@ export type CARD_NFT = {
   priceStatus: "success" | "fail"
 } & AVATAR
 
+export type COLLECTOR = {
+  name: string
+  nickname: string
+  priceInETH: string
+  pricePercent: string
+  priceStatus: "success" | "fail"
+} & AVATAR
+
 export type SECTION_INFO = { offsetTop: number; id: string }
 export type SECTIONS_STATE = {
   sections: SECTION_INFO[]

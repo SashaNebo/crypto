@@ -22,7 +22,7 @@ export const NFTs = () => {
   }
 
   return (
-    <Section className="overflow-hidden pt-10" sectionId="nfts">
+    <Section className="overflow-hidden py-[100px]" sectionId="nfts">
       <div className="container">
         <h6 className="subtitle">Trending</h6>
         <div className="flex flex-wrap justify-between items-center gap-y-6 max-sm:flex-col max-sm:items-start max-sm:gap-y-4">
