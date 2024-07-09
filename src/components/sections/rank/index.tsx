@@ -4,12 +4,13 @@ import { Section } from "@/components/ui/section"
 import { categoryList, collectors } from "@/constants"
 import { useState } from "react"
 import { Ranking } from "./ranking"
+import { Decorations } from "./decorations"
 
 export const Rank = () => {
   const [category, setCategory] = useState("This week")
 
   return (
-    <Section className="" sectionId="rank">
+    <Section className="relative py-[100px]" sectionId="rank">
       <div className="container">
         <h6 className="subtitle">{category}</h6>
         <div className="flex flex-wrap justify-between items-center gap-6 max-sm:flex-wrap max-sm:flex-col max-sm:items-start max-sm:gap-y-4">
@@ -23,6 +24,7 @@ export const Rank = () => {
 
         <Ranking collectors={collectors} />
       </div>
+      <Decorations />
     </Section>
   )
 }

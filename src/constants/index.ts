@@ -157,8 +157,8 @@ export const collectors: COLLECTOR[] = [
     verified: true,
   },
   {
-    name: "Jane Smith",
-    nickname: "@janeNFT",
+    name: "Charlie Davis",
+    nickname: "@charlieNFT",
     priceInETH: "2.1",
     pricePercent: "15",
     priceStatus: "success",
@@ -182,8 +182,8 @@ export const collectors: COLLECTOR[] = [
     avatarImg: av4,
   },
   {
-    name: "Charlie Davis",
-    nickname: "@charlieNFT",
+    name: "Jane Smith",
+    nickname: "@janeNFT",
     priceInETH: "0.7",
     pricePercent: "25",
     priceStatus: "fail",
