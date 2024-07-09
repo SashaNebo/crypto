@@ -6,8 +6,11 @@ export const Form = () => {
   const [value, setValue] = useState<string>("")
   return (
     <form
-      className="flex flex-nowrap mt-12 pl-6 pr-2 py-2 bg-color-bg border border-color-border rounded-[30px]"
-      onSubmit={(e) => e.preventDefault()}>
+      className="flex flex-nowrap mt-12 pl-6 pr-2 py-2 bg-color-bg border border-color-border rounded-[30px] focus-within:border-transparent focus-within:ring-2 focus-within:ring-color-primary"
+      onSubmit={(e) => {
+        e.preventDefault()
+        value && setValue(() => "")
+      }}>
       <label htmlFor="email" className="sr-only">
         Email
       </label>

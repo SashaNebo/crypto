@@ -1,9 +1,10 @@
 import { Section } from "@/components/ui/section"
 import { Form } from "./form"
+import { Decorations } from "./decorations"
 
 export const Newsletter = () => {
   return (
-    <Section sectionId="newsletter">
+    <Section className="relative" sectionId="newsletter">
       <div className="container">
         <div className="w-full h-full min-h-[750px] flex flex-col justify-center items-center max-sm:min-h-[600px]">
           <h2 className="flex flex-col justify-center items-center text-[56px] text-center font-bold max-sm:text-[40px]">
@@ -15,7 +16,8 @@ export const Newsletter = () => {
           <Form />
         </div>
       </div>
-      <div></div>
+
+      <Decorations />
     </Section>
   )
 }
